@@ -1,0 +1,73 @@
+name: hustle
+description: A new Flutter project.
+version: 2.0.0+1
+
+environment:
+  sdk: ">=2.5.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  cupertino_icons: ^0.1.2
+  shared_preferences: ^0.5.7+3
+  hive: ^1.4.1+1
+  hive_flutter: ^0.3.0+2
+  path_provider: ^1.6.11
+  get: ^2.13.0
+  intl: ^0.16.1
+  
+
+dev_dependencies:
+  flutter_launcher_icons:
+  hive_generator: ^0.7.0+2
+  build_runner: ^1.10.0
+  flutter_automation: ^1.3.3
+
+
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "assets/icon/Hustle_background.png"
+  image_path_android: "assets/icon/Hustle_background.png"
+  adaptive_icon_background: "assets/icon/Hustle_background.png"
+  adaptive_icon_foreground: "assets/icon/Hustle_foreground.png"
+flutter:
+
+  
+  uses-material-design: true
+
+  #assets:
+  assets: 
+    - assets/icon/Hustle_foreground.png
+    - assets/sun.png
+    - assets/moon.png
+    - assets/system.png
+
+  fonts:
+    - family: Comfortaa
+      fonts:
+        - asset: assets/fonts/comfortaa/Comfortaa-Bold.ttf
+          weight: 800
+        - asset: assets/fonts/comfortaa/Comfortaa-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/comfortaa/Comfortaa-Medium.ttf
+          weight: 400
+        - asset: assets/fonts/comfortaa/Comfortaa-Regular.ttf
+          weight: 200
+        - asset: assets/fonts/comfortaa/Comfortaa-Light.ttf
+          weight: 100
+    
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/Quicksand/Quicksand-Bold.ttf
+          weight: 800
+        - asset: assets/fonts/Quicksand/Quicksand-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Quicksand/Quicksand-Medium.ttf
+          weight: 400
+        - asset: assets/fonts/Quicksand/Quicksand-Regular.ttf
+          weight: 200
+        - asset: assets/fonts/Quicksand/Quicksand-Light.ttf
+          weight: 100
+ 
