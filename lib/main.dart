@@ -27,7 +27,38 @@ class Hustle extends StatelessWidget {
       home: FutureBuilder(
         future: Hive.openBox('counters'),
         builder: (BuildContext context, AsyncSnapshot snapshot) {
-          return SplashScreen();
+          if (snapshot.connectionState == ConnectionState.done) {
+            if (snapshot.hasError) {
+              return Text(snapshot.error.toString());
+            } else {
+              return SplashScreen();
+            }
+          } else {
+            return Scaffold(
+              backgroundColor: Color.fromRGBO(48, 63, 159, 1),
+              body: SafeArea(
+                child: Column(
+                  children: <Widget>[
+                    Spacer(
+                      flex: 5,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Image.asset(
+                          'assets/icon/Hustle_foreground.png',
+                          height: displayWidth(context) * 0.5,
+                        ),
+                      ],
+                    ),
+                    Spacer(
+                      flex: 5,
+                    ),
+                  ],
+                ),
+              ),
+            );
+          }
         },
       ),
     );
@@ -321,7 +352,7 @@ class CountersState extends State<Counters> {
                                                     'assets/moon.png',
                                                     width:
                                                         displayWidth(context) *
-                                                            0.1,
+                                                            0.07,
                                                   ),
                                                 ],
                                               ),
@@ -367,7 +398,7 @@ class CountersState extends State<Counters> {
                                                     'assets/sun.png',
                                                     width:
                                                         displayWidth(context) *
-                                                            0.1,
+                                                            0.07,
                                                   ),
                                                 ],
                                               ),
@@ -442,7 +473,7 @@ class CountersState extends State<Counters> {
                                                     'assets/system.png',
                                                     width:
                                                         displayWidth(context) *
-                                                            0.1,
+                                                            0.07,
                                                   ),
                                                 ],
                                               ),
