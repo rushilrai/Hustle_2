@@ -12,4 +12,4 @@ Swipe task to Delete:
 
 Also, with a Dark Theme:
 
-<img src="screenshots/Screenshot_dark" width=400>
+<img src="screenshots/Screenshot_dark.jpg" width=400>
